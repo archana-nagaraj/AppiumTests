@@ -8,12 +8,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static org.junit.Assert.*;
 import java.net.URL;
-import java.util.List;
 
 import io.appium.java_client.MobileBy;
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
 
@@ -43,7 +40,6 @@ public  class firstAppiumTest {
     public void test() {
         System.out.println("Success");
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        // wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("Login Screen")));
         WebElement screen = wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("Login Screen")));
         screen.click();
        }
